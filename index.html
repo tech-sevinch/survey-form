@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Kelajak Sevinch Diyor</h1>
+      <p id="description"><strong>Kelajak Sevinch Diyor</strong > - Siz va oilangiz sog'lig'i haqida qayg'uradi. Bizni tanlaganingiz va bizga ishonganingiz uchun tashakkur. Sizning fikringiz biz uchun qadrli. So'rovnomani to'ldirib, xizmatlarimizni yanada yaxshilashga o'z hissangizni qo'shing.</p>
+      <form id="survey-form" action="https://script.google.com/macros/s/AKfycbxHswrcdzWU9TZjYPTymEHm7COoQrrJxQJ8Mq1ILSNjNjeA1_xH_z0efkKdkzMhnH_tpA/exec" method="POST>
+        <label for="name" id="name-label"><b>Familiya-Ismingiz:</label>
+        <input id="name" type="text" placeholder="Zokirov Shahboz" required><br>
+
+        <label for="email" id="email-label">Email manzilingiz:</label>
+        <input id="email" type="email" placeholder="example@gmail.com" required><br>
+
+        <label for="number" id="number-label">Yoshingiz(majburiy emas):<b></label>
+        <input id="number"  type="number" min="1" max="100" placeholder="26"><br><br>
+        
+        
+        <label for="dropdown"><b>Xizmatimizni qanday baholaysiz?</b></label><br>
+        <select id="dropdown" name="dropdown">
+          <option value="Yomon">Yomon</option>
+          <option value="Qoniqarli">Qoniqarli</option>
+          <option value="Yaxshi">Yaxshi</option>
+          <option selected value="A'lo">A'lo</option>
+          </select><br><br>
+
+
+<fieldset>
+  <legend><b>Muolajalar va mahsulotlardan foydalanganingizdan so'ng o'zingizni qanday his qildingiz?</b></legend>
+<input id="ancha-yaxshi-option" type="radio" name="feeling" value="Ancha yaxshi">
+<label for="ancha-yaxshi-option">Ancha yaxshi</label>
+<input id="yaxshi-option" type="radio" name="feeling" value="yaxshi">
+<label for="yaxshi-option">Yaxshi</label>
+<input id="o'zgarish-sezmadim-option" name="feeling" type="radio" value="o'zgarish sezmadim">
+<label for="o'zgarish-sezmadim-option">O'zgarish sezmadim</label>
+<input id="noqulaylik-his-qildim-option" type="radio" name="feeling" value="noqulaylik his qildim">
+<label for="noqulaylik-his-qildim-option">Noqulaylik his qildim</label> 
+</fieldset><br>
+<p><b>Qaysi xizmatlarimizdan foydalangansiz?</b></p>
+
+<input  checked type="checkbox" id="diagnosis" name="choice" value="diagnosis" />
+          <label for="diagnosis">Tibbiy ko'rik va tashxis</label>
+
+          <input
+            type="checkbox"
+            id="massage"
+            name="choice"
+            value="massage"
+          />
+          <label for="massage">Massaj</label>
+          
+          <input type="checkbox" id="hijama" name="choice" value="hijama" />
+          <label for="hijama">Hijoma</label>
+
+ <input
+            type="checkbox"
+            id="apparatus"
+            name="choice"
+            value="apparatus"
+          />
+          <label for="apparatus">Maxsus uskunalar yordamida muolajalar</label>
+          
+          <input type="checkbox" id="acupuncture" name="choice" value="acupuncture" />
+          <label for="acupuncture">Akupunktura(igna bilan muolaja)</label>
+
+          <input type="checkbox" id="hirudotherapy" name="choice" value="hirudotherapy" />
+          <label for="hirudotherapy">Zuluk bilan muolaja</label>
+
+          <input type="checkbox" id="medicinal-products" name="choice" value="medicinal-products" />
+          <label for="medicinal-products">Siberian Wellness mahsulotlari</label><br><br>
+<label for="comments">Fikr-mulohazalaringiz</label>
+<textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Fikr va takliflaringizni yozing..."></textarea>
+<button id="submit">Submit</button>
+          </form>
+  </body>
+</html>
